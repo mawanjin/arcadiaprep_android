@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_head_height"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/button_normal_width"
+            android:layout_height="@dimen/button_normal_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/button_margin_left"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bttn_no_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Bookmarks"
+            android:textSize="19dp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <!-- Order Bar -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- By Date -->
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_normal_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="By Date"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_button_blue"/>
+        <!-- By Sets -->
+
+        <TextView
+            android:id="@+id/txtSets"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_normal_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="By Sets"
+            android:background="@drawable/bg_button" />
+    </LinearLayout>
+
+    <!-- Content List -->
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

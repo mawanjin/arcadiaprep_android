@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/container_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Resume Button -->
+
+            <Button
+                android:id="@+id/btnResume"
+                android:layout_width="@dimen/button_long_width"
+                android:layout_height="@dimen/button_long_height"
+                android:layout_marginLeft="@dimen/button_margin_left"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/grey177x57"
+                android:text="Resume" />
+            <!-- Begin Practice Button -->
+
+            <Button
+                android:id="@+id/btnPractice"
+                android:layout_width="@dimen/button_long_width"
+                android:layout_height="@dimen/button_long_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bttn_no_txt"
+                android:layout_marginRight="@dimen/button_margin_left"
+                android:text="Begin Practice"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/problemset_introduction"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/relative_bottom"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <!-- title -->
+
+        <LinearLayout
+            android:id="@+id/title_header_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">"
+
+            <!-- menu -->
+
+            <Button
+                android:id="@+id/btnMenu"
+                android:layout_width="@dimen/button_normal_width"
+                android:layout_height="@dimen/button_normal_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/bttn_no_txt"
+                android:text="Menu"
+                android:textColor="@android:color/white" />
+
+            <!-- problem set name -->
+
+            <TextView
+                android:id="@+id/setname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Free Sample1:Moderate Passage"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+
+            <!-- Review -->
+
+            <Button
+                android:id="@+id/btnReview"
+                android:layout_width="@dimen/button_normal_width"
+                android:layout_height="@dimen/button_normal_height"
+                android:layout_margin="5dp"
+                android:background="@drawable/bttn_no_txt"
+                android:text="Review"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- biref -->
+
+        <RelativeLayout
+            android:id="@+id/container_brief"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/title_header_bar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corner_round_gray"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:text="Introduction"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <WebView
+                    android:id="@+id/webContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fullscreenContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:background="#ffffffff"
+        android:visibility="gone" >
+        
+        <Button
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height= "60dp"
+                android:layout_marginLeft="@dimen/button_margin_left"
+                android:background="@drawable/backhome"
+                android:textColor="@android:color/white" />
+        
+    </FrameLayout>
+
+</RelativeLayout>

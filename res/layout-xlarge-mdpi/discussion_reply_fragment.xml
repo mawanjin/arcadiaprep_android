@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/COLOR_WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1"
+        android:orientation="vertical"
+        android:background="@drawable/background" >
+
+        <!-- Content -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- TextArea -->
+
+            <EditText
+                android:id="@+id/editContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/corner_round_gray_reply"
+                android:gravity="top"
+                android:maxLines="20"
+                android:minLines="20"
+                android:padding="5dp" />
+
+            <!-- Remove -->
+
+            <TextView
+                android:id="@+id/txtRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/editContent"
+                android:layout_below="@+id/editContent"
+                android:text="Remove Attachment" />
+
+            <!-- Attachment -->
+
+            <TextView
+                android:id="@+id/txtAttach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/editContent"
+                android:layout_marginTop="10dp"
+                android:text="Attach a screenshot or photo"
+                android:textColor="@color/COLOR_BLUE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editContent"
+                android:layout_marginTop="10dp"
+                android:text="Comment:" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imgAttach"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="tessss" />
+
+</LinearLayout>

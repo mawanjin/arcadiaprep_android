@@ -1,0 +1,67 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- GENERAL -->
+    <style name="dialog_ellipsizable">
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="dialog_button_blue">
+        <item name="android:textColor">@color/dialog_states_button_blue</item>
+        <item name="android:background">@drawable/dialog_states_button_blue</item>
+    </style>
+
+    <style name="dialog_button_white">
+        <item name="android:textColor">@color/dialog_states_button_white</item>
+        <item name="android:background">@drawable/dialog_states_button_white</item>
+    </style>
+
+    <style name="dialog_header">
+        <item name="android:textColor">@color/dialog_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="dialog_login">
+        <item name="android:background">@drawable/dialog_shape_radial_background</item>
+        <item name="android:paddingLeft">@dimen/dialog_padding_left</item>
+        <item name="android:paddingRight">@dimen/dialog_padding_right</item>
+        <item name="android:paddingTop">@dimen/dialog_padding_top</item>
+        <item name="android:paddingBottom">@dimen/dialog_padding_bottom</item>
+    </style>
+
+    <style name="dialog_label">
+        <item name="android:textColor">@color/dialog_black</item>
+        <item name="android:textSize">@dimen/dialog_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/dialog_label_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/dialog_label_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/dialog_edittext_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_edittext_margin_top_bottom</item>
+    </style>
+
+    <style name="dialog_inner_frame">
+        <item name="android:background">@drawable/dialog_shape_frame</item>
+        <item name="android:paddingLeft">@dimen/dialog_inner_frame_padding_left</item>
+        <item name="android:paddingRight">@dimen/dialog_inner_frame_padding_right</item>
+        <item name="android:paddingTop">@dimen/dialog_inner_frame_padding_top</item>
+        <item name="android:paddingBottom">@dimen/dialog_inner_frame_padding_bottom</item>
+    </style>
+
+    <style name="dialog_edit_text" parent="@style/dialog_ellipsizable">
+        <item name="android:textColor">@color/dialog_black</item>
+        <item name="android:textSize">@dimen/dialog_text_size</item>
+        <item name="android:textColorHint">@color/dialog_gray</item>
+        <item name="android:background">@drawable/dialog_states_edittext</item>
+        <item name="android:layout_height">@dimen/dialog_button_white_height</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">4dip</item>
+        <item name="android:layout_marginTop">@dimen/dialog_edittext_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_edittext_margin_top_bottom</item>
+    </style>
+
+    <style name="dialog_white_label">
+        <item name="android:textColor">@color/dialog_white</item>
+        <item name="android:textSize">@dimen/dialog_text_size</item>
+    </style>
+
+</resources>

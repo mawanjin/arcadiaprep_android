@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <!-- Head -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/top_bar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            
+            <!-- icon two :perfdata -->
+
+            <ImageView
+                android:id="@+id/main_img_btn_icon_perfdata"
+                android:layout_width="@dimen/main_function_icon_width"
+                android:layout_height="@dimen/main_function_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/main_icon_information"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/perfdata" />
+            <!-- icon three :shopcart -->
+
+            <ImageView
+                android:id="@+id/main_img_btn_icon_shopcart"
+                android:layout_width="@dimen/main_function_icon_width"
+                android:layout_height="@dimen/main_function_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/main_icon_information"
+                android:padding="5dp"
+                android:src="@drawable/shopcart"
+                android:visibility="gone" />
+
+            <!-- icon four :interaction -->
+
+            <ImageView
+                android:id="@+id/main_img_btn_icon_interaction"
+                android:layout_width="@dimen/main_function_icon_width"
+                android:layout_height="@dimen/main_function_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/main_icon_information"
+                android:padding="5dp"
+                android:src="@drawable/disc_no_text" />
+
+            <!-- icon five :bookmark -->
+
+            <ImageView
+                android:id="@+id/main_img_btn_icon_bookmark"
+                android:layout_width="@dimen/main_function_icon_width"
+                android:layout_height="@dimen/main_function_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/main_icon_information"
+                android:padding="5dp"
+                android:src="@drawable/bookmark" />
+
+            <!-- icon six :email -->
+
+            <ImageView
+                android:id="@+id/main_img_btn_icon_email"
+                android:layout_width="@dimen/main_function_icon_width"
+                android:layout_height="@dimen/main_function_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/main_icon_information"
+                android:padding="5dp"
+                android:src="@drawable/mail" />
+
+            <ImageView
+                android:id="@+id/main_img_btn_icon_searchnotes"
+                android:layout_width="@dimen/main_function_icon_width"
+                android:layout_height="@dimen/main_function_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/main_icon_information"
+                android:padding="5dp"
+                android:src="@drawable/search_icon" />
+                <!-- icon one :information -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_btn_login"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bttn_no_txt"
+                android:text="@string/main_login"
+                android:textColor="@android:color/white" 
+			/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- APP TITLE -->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/logo_arcadia_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/main_logo"
+        android:layout_margin="15dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_arcadia" />
+    
+    <ImageView
+        android:id="@+id/main_img_btn_icon_info"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/main_icon_information"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@+id/logo_arcadia_id"
+        android:src="@drawable/infoicon" />
+    
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- contents recommendations -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <!-- Recommendations -->
+
+            <RelativeLayout
+                android:id="@+id/recommendations_visitmarketplace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp" >
+
+                <!--
+                <TextView
+                    android:id="@+id/recommendations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/main_recommendations"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                -->
+
+                <TextView
+                    android:id="@+id/visitmarketplace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom"
+                    android:text="@string/main_visitmarketplace"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/recommendations_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linear_main_category_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_corner_round_gray"
+                    android:padding="5dp" >
+
+                    <com.foound.widget.AmazingListView
+                        android:id="@+id/lsComposer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white" >
+                    </com.foound.widget.AmazingListView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical" >
+
+            <!-- contents my queston sets -->
+            <!-- my queston sets -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/myquestionsets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/myquestionsets"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <!-- Three category bars -->
+
+                <LinearLayout
+                    android:id="@+id/linear_main_category_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/main_corner_round_gray"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

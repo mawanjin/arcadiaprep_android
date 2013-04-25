@@ -1,0 +1,76 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+
+<link href="./video-js/video-js.css" rel="stylesheet">
+<script src="./video-js/video.js"></script>
+
+        
+<script>
+    function init(){
+    }
+
+    function requestFullScreen() {
+    }
+
+    var play_offset = 0;
+    var video;
+
+    function start() {
+        if (play_offset != 0) {
+            video = document.getElementById('vid');video.currentTime=play_offset;
+        }
+    }
+    
+    function seek(x) {
+        if (arguments.length > 0) {
+            if (x != 0) {
+                play_offset = x;
+            }
+        }
+        
+        video = document.getElementById('vid');
+        video.currentTime= play_offset;
+        
+    }
+    
+    function playVideo() {
+        video = document.getElementById('vid');
+		video.className = "video-js vjs-default-skin";
+        video.play();
+    }
+    function stopVideo(){ 
+        video = document.getElementById('vid');video.pause();  }
+    window.onload = playVideo;
+    window.onunload = stopVideo;
+    
+    function fillContent(c){ 
+
+    	document.getElementById('div_content').innerHTML=c;
+		
+    }
+    
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+    <body style="margin:0 auto;padding:0;height:480px;" onload="init();";>
+
+<div  id="div_content" style="margin:0 auto;position:relative;width:640px;height:480px;"  >
+<!--
+<video class="video-js vjs-default-skin" controls height="480" id="vid"  poster="http://view.vzaar.com/935249/image" preload="auto" width="640" src="http://view.vzaar.com/935244/video" data-setup="{}">
+</video>
+-->
+
+<video id="vid" class="video-js vjs-default-skin" controls width="640" height="480" preload="auto" poster="sbvideos/DSF-1.jpg" src="sbvideos/DSF-1.mp4" data-setup="{}">
+</video>
+
+<script>     play_offset = 360; </script>
+</div>
+
+</body >
+
+</html>

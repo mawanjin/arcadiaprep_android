@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog_login"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- "Register" -->
+
+    <TextView
+        style="@style/dialog_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_label_register" />
+
+    <LinearLayout
+        style="@style/dialog_inner_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- Photo holder -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dialog_inner_frame_padding_left" >
+
+                <!-- Photo -->
+
+                <ImageView
+                    android:id="@+id/idPhoto"
+                    android:layout_width="@dimen/dialog_photo_width"
+                    android:layout_height="@dimen/dialog_photo_height"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/dialog_hint_photo"
+                    android:src="@color/dialog_gray" />
+
+                <!-- "Tap for photo" -->
+
+                <TextView
+                    android:id="@+id/idPhotoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dialog_hint_photo" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- First name -->
+
+                <EditText
+                    android:id="@+id/idEditTextFirstName"
+                    style="@style/dialog_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_edittext_height"
+                    android:hint="@string/dialog_hint_first_name" />
+
+                <!-- Last name -->
+
+                <EditText
+                    android:id="@+id/idEditTextLastName"
+                    style="@style/dialog_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dialog_edittext_height"
+                    android:hint="@string/dialog_hint_last_name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Email -->
+
+        <EditText
+            android:id="@+id/idEditTextEmail"
+            style="@style/dialog_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_edittext_height"
+            android:inputType="textEmailAddress"
+            android:hint="@string/dialog_hint_email" />
+
+        <!-- Password -->
+
+        <EditText
+            android:id="@+id/idEditTextPassword"
+            style="@style/dialog_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_edittext_height"
+            android:inputType="textPassword"
+            android:hint="@string/dialog_hint_password_register" />
+
+        <!-- Password again -->
+
+        <EditText
+            android:id="@+id/idEditTextPasswordAgain"
+            style="@style/dialog_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_edittext_height"
+            android:inputType="textPassword"
+            android:hint="@string/dialog_hint_password_again" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_edittext_margin_top_bottom"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/idButtonCancel"
+                style="@style/dialog_button_white"
+                android:layout_width="@dimen/dialog_button_white_width"
+                android:layout_height="@dimen/dialog_button_white_height"
+                android:layout_marginRight="@dimen/dialog_inner_frame_padding_right"
+                android:text="@string/dialog_label_cancel" />
+
+            <Button
+                android:id="@+id/idButtonRegister"
+                style="@style/dialog_button_blue"
+                android:layout_width="@dimen/dialog_button_blue_width"
+                android:layout_height="@dimen/dialog_button_blue_height"
+                android:text="@string/dialog_label_register" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

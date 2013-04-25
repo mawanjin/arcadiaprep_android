@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_draft_popup_right"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnProblemsetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:text="Exam option"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_question_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffdddddd"
+                android:dividerHeight="1dp"
+        android:layout_gravity="center"
+         >
+        
+    </ListView>
+
+</LinearLayout>

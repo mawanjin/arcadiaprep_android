@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CCCCCC"
+    android:orientation="vertical" 
+    >
+
+    <RelativeLayout
+   	    android:id="@+id/navigationPanel"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_alignParentTop="true"
+   	    android:background="#777777"
+   	    >
+		
+		<Button
+		    android:id="@+id/previousBtn"
+  	    		android:layout_alignParentLeft="true"
+   	    	android:layout_alignParentTop="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/previous"
+		    />
+
+		<Button
+		    android:id="@+id/nextBtn"
+  	    		android:layout_alignParentRight="true"
+   	    	android:layout_alignParentTop="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/next"
+		    />
+				
+	</RelativeLayout>
+    
+</LinearLayout>

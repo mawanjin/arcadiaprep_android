@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Title android:background="@drawable/bg_draft_popup_middle" -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/chat_emo_select_down"
+            android:cursorVisible="true"
+            android:hint="Post your comment here"
+            android:singleLine="true"
+            android:textColor="@android:color/background_dark" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linear_head"
+            android:layout_marginRight="10dp"
+            android:text="2 Comments" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/txtPost"
+            android:layout_below="@+id/txtCommentCount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/COLOR_WHITE"
+            android:divider="#ffdddddd"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

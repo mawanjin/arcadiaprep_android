@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- GENERAL -->
+    <color name="dialog_white">#ffffff</color>
+    <color name="dialog_black">#000000</color>
+    <color name="dialog_gray">#808080</color>
+
+    <!-- DIALOG -->
+    <color name="dialog_blue_light">#c5ceda</color>
+    <color name="dialog_blue_dark">#b5c0d0</color>
+
+    <!-- BUTTON BLUE -->
+    <color name="dialog_button_blue_normal_top">#5b74d9</color>
+    <color name="dialog_button_blue_normal_bottom">#082566</color>
+    <color name="dialog_button_blue_border">#0f1324</color>
+    <color name="dialog_button_blue_text_pressed">@color/dialog_white</color>
+    <color name="dialog_button_blue_text_focused">@color/dialog_white</color>
+    <color name="dialog_button_blue_text_normal">@color/dialog_white</color>
+
+    <!-- BUTTON WHITE -->
+    <color name="dialog_button_white_normal_top">@color/dialog_white</color>
+    <color name="dialog_button_white_normal_bottom">@color/dialog_gray</color>
+    <color name="dialog_button_white_border">#9e9e9e</color>
+    <color name="dialog_button_white_text_pressed">@color/dialog_black</color>
+    <color name="dialog_button_white_text_focused">@color/dialog_black</color>
+    <color name="dialog_button_white_text_normal">@color/dialog_black</color>
+
+</resources>

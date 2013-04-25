@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dialog_login"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- "Login to..." -->
+
+    <TextView
+        style="@style/dialog_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_header_login" />
+
+    <LinearLayout
+        style="@style/dialog_inner_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- "Login" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/dialog_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_label_login" />
+
+            <EditText
+                android:id="@+id/idEditTextUserName"
+                style="@style/dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_edittext_height"
+                android:hint="@string/dialog_hint_login"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <!-- "Password" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/dialog_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_label_password" />
+
+            <EditText
+                android:id="@+id/idEditTextPassword"
+                style="@style/dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_edittext_height"
+                android:hint="@string/dialog_hint_password"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <!-- Login button -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_edittext_margin_top_bottom" >
+
+            <Button
+                android:id="@+id/idButtonLogin"
+                style="@style/dialog_button_blue"
+                android:layout_width="@dimen/dialog_button_blue_width"
+                android:layout_height="@dimen/dialog_button_blue_height"
+                android:layout_alignParentRight="true"
+                android:text="@string/dialog_label_login" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- "Don't have an..." -->
+
+    <TextView
+        style="@style/dialog_white_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_label_no_account" />
+
+    <!-- Register button -->
+
+    <Button
+        android:id="@+id/idButtonRegister"
+        style="@style/dialog_button_white"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_button_white_height"
+        android:text="@string/dialog_label_register" />
+
+</LinearLayout>

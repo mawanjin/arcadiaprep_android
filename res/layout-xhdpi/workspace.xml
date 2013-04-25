@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/workspace_component_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <!-- http://blog.gorges.us/2010/06/android-two-dimensional-scrollview/ -->
+
+    <us.gorges.viewaclue.TwoDScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scene_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawingCacheQuality="low" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scene_container"
+            android:layout_width="3000dp"
+            android:layout_height="2000dp"
+            android:background="#CDCDCD" >
+
+            <RelativeLayout
+                android:id="@+id/canvas_container"
+                android:background="@drawable/ws_tiles"
+                android:layout_width="3000dp"
+                android:layout_height="2000dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <RelativeLayout
+                android:id="@+id/canvas2_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drop_shadow"
+                android:layout_marginTop="10dp"
+				android:paddingBottom="5dp"
+                android:scrollbars="none" >
+
+                <FrameLayout
+                    android:id="@+id/web_view_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"                    
+                    android:scrollbars="none" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </us.gorges.viewaclue.TwoDScrollView>   
+        
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:allowSingleTap="true"
+        android:content="@+id/buttonPanel"
+        android:handle="@+id/handle"
+        android:rotation="180" >
+
+        <RelativeLayout
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:rotation="180" >
+                        
+            <ImageView
+                android:id="@+id/slider_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/slider_states" />
+            
+        </RelativeLayout>
+
+	<LinearLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content" 
+	        android:id="@+id/buttonPanel"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:rotation="180">
+	    
+        <LinearLayout
+            android:id="@+id/buttonPanelChild"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:alpha="0.75"
+            android:background="@drawable/tool_panel" >
+
+            <ImageButton
+                android:id="@+id/penOnlyBtn"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:src="@drawable/penonly_icon_states" />
+            
+            <ImageButton
+                android:id="@+id/settingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Pen Mode"
+                android:background="@null"
+                android:src="@drawable/draw_icon_states" />
+
+            <ImageButton
+                android:id="@+id/textBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Text Mode"
+                android:background="@null"
+                android:src="@drawable/text_icon_states" />
+
+            <ImageButton
+                android:id="@+id/eraseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="Erase Mode"
+                android:src="@drawable/eraser_icon_states" />
+
+                <ImageButton
+                    android:id="@+id/clearAllBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="ClearAll"
+                    android:src="@drawable/erase_all" />
+
+                <ImageButton
+                    android:id="@+id/undoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Undo"
+					android:background="@null"
+                    android:layout_below="@+id/clearAllBtn"
+                    android:src="@drawable/undo_arrow" />
+
+                <ImageButton
+                    android:id="@+id/redoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Redo"
+                 	android:background="@null"
+                    android:layout_below="@+id/undoBtn"
+                    android:src="@drawable/redo_arrow" />
+            	
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/buttonPanelChild2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:alpha="0"
+            android:background="@null">
+         </LinearLayout>
+
+      </LinearLayout>
+        
+    </SlidingDrawer>       
+    
+    <LinearLayout
+        android:id="@+id/choicePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/in_person_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"                    
+        android:layout_marginBottom="50dp"                    
+        android:layout_centerHorizontal="false"
+        android:background="@null"
+        android:alpha="0.75"
+        >
+    </LinearLayout>
+
+</RelativeLayout>

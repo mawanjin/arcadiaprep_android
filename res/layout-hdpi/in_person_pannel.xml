@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:background="@drawable/tool_panel"
+    android:orientation="horizontal" >
+
+	<ImageButton  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/inperson_record"
+	    android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/inperson_rec_bttn"
+        android:textColor = "@android:color/white"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00000000"  
+       	android:padding="@dimen/inperson_button_padding"
+        android:visibility="gone"
+	  />
+	
+	<ImageButton
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/inperson_play"
+	    android:layout_width="@dimen/inperson_button_width"
+	    android:layout_height="@dimen/inperson_button_width"
+	    android:layout_gravity="center_vertical"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginLeft="24dp"
+	    android:layout_marginRight="24dp"
+	    android:layout_marginTop="5dp"
+	    android:background="#00000000"
+	    android:padding="@dimen/inperson_button_padding"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/inperson_play_bttn"
+	    android:textColor="@android:color/white" />
+	 
+	<ImageButton  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/inperson_mic"
+	    android:layout_width="@dimen/inperson_button_width"
+        android:layout_height="@dimen/inperson_button_width"
+        android:src="@drawable/inperson_mic"
+        android:textColor = "@android:color/white"
+       	android:layout_marginLeft="@dimen/inperson_button_width"
+        android:layout_gravity="center_vertical" 
+        android:background="#00000000"  
+        android:scaleType="centerInside" 
+        android:visibility="gone"
+	  />
+	
+	<Button
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/inperson_done"
+	    android:layout_width="@dimen/question_view_button_menu_width"
+	    android:layout_height="@dimen/question_view_button_menu_height"
+	    android:layout_marginLeft="@dimen/inperson_button_width"
+	    android:background="@drawable/bttn_no_txt"
+	    android:text="Done"
+	    android:textColor="@android:color/white" 
+	    android:layout_gravity="center_vertical" 
+	    android:layout_marginRight="12dp" 
+	    android:visibility="gone"
+	    />
+	
+</LinearLayout>

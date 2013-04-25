@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/COLOR_WHITE"
+    android:orientation="vertical" >
+
+    <!-- Head -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_head_height"
+        android:background="@drawable/top_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/button_normal_width"
+            android:layout_height="@dimen/button_normal_height"
+            android:layout_marginLeft="@dimen/button_margin_left"
+            android:background="@drawable/bttn_no_txt"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Discussions"
+            android:textColor="@color/COLOR_WHITE"
+            android:textSize="19dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+        
+        <TextView
+            android:id="@+id/txtPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/chat_emo_select_down"
+            android:cursorVisible="true"
+            android:hint="Post your comment here"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark" >
+        </TextView>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/txtPost"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/COLOR_WHITE"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffdddddd"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

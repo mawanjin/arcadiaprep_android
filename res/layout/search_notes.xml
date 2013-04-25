@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_head_height"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/button_normal_width"
+            android:layout_height="@dimen/button_normal_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/button_margin_left"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bttn_no_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Search Notes"
+            android:textSize="19dp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <!-- By Date -->
+
+        <EditText
+            android:id="@+id/searchKey"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="2"
+            android:background="@drawable/bg_button"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/button_normal_width"
+            android:layout_height="@dimen/button_normal_height"
+            android:layout_marginLeft="@dimen/button_margin_left"
+            android:background="@drawable/bttn_no_txt"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/resultMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+    
+    <!-- Content List -->
+    
+    <ListView
+        android:id="@+id/searchList"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choicePanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/answerpannel"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/question_view_button_choice_height"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/answerbtn"
+            android:text="A"
+            android:textColor="@color/COLOR_BLACK" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/question_view_button_choice_height"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/answerbtn"
+            android:text="B"
+            android:textColor="@color/COLOR_BLACK" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/question_view_button_choice_height"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/answerbtn"
+            android:text="C"
+            android:textColor="@color/COLOR_BLACK" />
+
+        <Button
+            android:id="@+id/btnD"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/question_view_button_choice_height"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/answerbtn"
+            android:text="D"
+            android:textColor="@color/COLOR_BLACK" />
+
+        <Button
+            android:id="@+id/btnE"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/question_view_button_choice_height"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/answerbtn"
+            android:text="E"
+            android:textColor="@color/COLOR_BLACK" />
+
+        <Button
+            android:id="@+id/btnF"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/question_view_button_choice_height"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/answerbtn"
+            android:text="F"
+            android:textColor="@color/COLOR_BLACK" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btnHint"
+                android:layout_width="@dimen/question_view_button_choice_width"
+                android:layout_height="@dimen/question_view_button_choice_height"
+                android:background="@drawable/choice_btn_bg"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Hintx1"
+                android:textColor="@android:color/white" />
+            
+            <Button
+                android:id="@+id/btnFinish"
+                android:layout_width="@dimen/question_view_button_choice_width"
+                android:layout_height="@dimen/question_view_button_choice_height"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/choice_btn_bg"
+                android:text="confirm2"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

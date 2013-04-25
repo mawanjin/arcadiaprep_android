@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="COLOR_BACKGROUND">#FFFFFF</color>
+    <color name="COLOR_WHITE">#FFFFFF</color>
+    <color name="COLOR_BLACK">#000000</color>
+    <color name="COLOR_BLUE">#283A90</color>
+    <color name="COLOR_CANARY">#5d3d00</color>
+</resources>

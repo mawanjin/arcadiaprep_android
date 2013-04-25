@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/workspace_component_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <!-- http://blog.gorges.us/2010/06/android-two-dimensional-scrollview/ -->
+
+    <us.gorges.viewaclue.TwoDScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scene_scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawingCacheQuality="low" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scene_container"
+            android:layout_width="3000dp"
+            android:layout_height="2000dp"
+            android:background="#CDCDCD" >
+
+            <RelativeLayout
+                android:id="@+id/canvas_container"
+                android:layout_width="3000dp"
+                android:layout_height="2000dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ws_tiles" />
+
+            <RelativeLayout
+                android:id="@+id/canvas2_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/drop_shadow"
+                android:paddingBottom="5dp"
+                android:scrollbars="none" >
+
+                <FrameLayout
+                    android:id="@+id/web_view_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </us.gorges.viewaclue.TwoDScrollView>
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:allowSingleTap="true"
+        android:content="@+id/buttonPanel"
+        android:handle="@+id/handle"
+        android:rotation="180" >
+
+        <RelativeLayout
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/slider_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="180"
+                android:src="@drawable/slider_states" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:rotation="180" >
+
+            <LinearLayout
+                android:id="@+id/buttonPanelChild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.75"
+                android:background="@drawable/tool_panel"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/penOnlyBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/penonly_icon_states" />
+
+                <ImageButton
+                    android:id="@+id/settingBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="Pen Mode"
+                    android:src="@drawable/draw_icon_states" />
+
+                <ImageButton
+                    android:id="@+id/textBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="Text Mode"
+                    android:src="@drawable/text_icon_states" />
+
+                <ImageButton
+                    android:id="@+id/eraseBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="Erase Mode"
+                    android:src="@drawable/eraser_icon_states" />
+
+                <ImageButton
+                    android:id="@+id/clearAllBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="ClearAll"
+                    android:src="@drawable/erase_all" />
+
+                <ImageButton
+                    android:id="@+id/undoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clearAllBtn"
+                    android:background="@null"
+                    android:contentDescription="Undo"
+                    android:src="@drawable/undo_arrow" />
+
+                <ImageButton
+                    android:id="@+id/redoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/undoBtn"
+                    android:background="@null"
+                    android:contentDescription="Redo"
+                    android:src="@drawable/redo_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonPanelChild2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:alpha="0"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choicePanel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/in_person_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:alpha="0.75"
+        android:background="@null" >
+    </LinearLayout>
+
+</RelativeLayout>

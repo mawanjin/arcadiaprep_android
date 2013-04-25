@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Disabled -->
+    <!-- disabled is not used so it is the same as pressed -->
+    <item android:drawable="@drawable/dialog_shape_button_blue_normal" android:state_enabled="false"/>
+
+    <!-- Non focused states -->
+    <item android:drawable="@drawable/dialog_shape_button_blue_normal" android:state_enabled="true" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>
+
+    <!-- Focused states -->
+    <!-- focused is the same as pressed -->
+    <item android:drawable="@drawable/dialog_shape_button_blue_pressed" android:state_enabled="true" android:state_focused="false" android:state_pressed="false" android:state_selected="true"/>
+    <item android:drawable="@drawable/dialog_shape_button_blue_pressed" android:state_enabled="true" android:state_focused="true" android:state_pressed="false" android:state_selected="false"/>
+    <item android:drawable="@drawable/dialog_shape_button_blue_pressed" android:state_enabled="true" android:state_focused="true" android:state_pressed="false" android:state_selected="true"/>
+
+    <!-- Pressed -->
+    <item android:drawable="@drawable/dialog_shape_button_blue_pressed" android:state_enabled="true" android:state_pressed="true"/>
+
+</selector>

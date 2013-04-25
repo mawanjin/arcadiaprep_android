@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner_round_gray" >
+
+        <LinearLayout
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/animStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone" >
+            </ProgressBar>
+
+            <ImageView
+                android:id="@+id/imgPortrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_arcadia" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtUname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="5"
+                    android:gravity="bottom"
+                    android:text="Arcadia Admin"
+                    android:textColor="@color/COLOR_BLUE"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtUnameSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:text="Arcadia Admin"
+                    android:textColor="@color/COLOR_CANARY" />
+
+                <TextView
+                    android:id="@+id/txtPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+230 Posts"
+                    android:textColor="@color/COLOR_CANARY" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/head"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner_round_gray_discussion"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/txtL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtL"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLocation"
+                android:layout_marginTop="20dp"
+                android:text="About me:" />
+
+            <TextView
+                android:id="@+id/txtAboutme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtA"
+                android:text="Palo Alto" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

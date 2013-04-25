@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="96dip"
+    android:background="@color/COLOR_BACKGROUND">
+
+    <ImageView
+        android:id="@+id/txvItemName_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/nextArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/next_arrow"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/COLOR_BLACK"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txvItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/nextArrow"
+        android:text="@string/item_price"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/COLOR_BLACK" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/txvItemPrice"
+        android:layout_toRightOf="@+id/txvItemName_image"
+        android:text="@string/item_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/COLOR_BLACK" >
+    </TextView>
+
+</RelativeLayout>

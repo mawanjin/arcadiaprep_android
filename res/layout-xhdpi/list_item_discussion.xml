@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/COLOR_WHITE"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/animStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp" >
+            </ProgressBar>
+
+            <ImageButton
+                android:id="@+id/imgPortrait"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Arcadia Pre"
+                    android:textColor="@color/COLOR_BLUE"
+                    android:textSize="16dp" />
+
+                <ImageButton
+                    android:id="@+id/btnReply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:background="#00000000"
+                    android:src="@drawable/chat_talkselect" />
+
+                <LinearLayout
+                    android:id="@+id/linear_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTitle"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="@style/animStyle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone" >
+                    </ProgressBar>
+
+                    <ImageView
+                        android:id="@+id/imgAttach"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp" />
+
+                    <TextView
+                        android:id="@+id/comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="sdffssdffffffffffff" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/gotoProblem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/date"
+                    android:text="Go to Problem"
+                    android:textColor="@color/COLOR_BLUE" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/linear_content"
+                    android:text="2011-11-11 11:11:11" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

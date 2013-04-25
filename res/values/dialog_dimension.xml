@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for pre-3.x devices -->
+<resources>
+
+    <!-- POPUP DIALOG -->
+    <dimen name="dialog_width">500dip</dimen>
+    <dimen name="dialog_padding_top">15dip</dimen>
+    <dimen name="dialog_padding_bottom">15dip</dimen>
+    <dimen name="dialog_padding_left">15dip</dimen>
+    <dimen name="dialog_padding_right">15dip</dimen>
+    <dimen name="dialog_inner_frame_padding_top">10dip</dimen>
+    <dimen name="dialog_inner_frame_padding_bottom">10dip</dimen>
+    <dimen name="dialog_inner_frame_padding_left">10dip</dimen>
+    <dimen name="dialog_inner_frame_padding_right">10dip</dimen>
+    <!-- vertical distance between two dialog items -->
+    <dimen name="dialog_item_distance">5dip</dimen>
+    <dimen name="dialog_text_size">15dip</dimen>
+
+    <!-- BUTTONS -->
+    <dimen name="dialog_button_blue_width">120dip</dimen>
+    <dimen name="dialog_button_blue_height">40dip</dimen>
+    <dimen name="dialog_button_white_width">120dip</dimen>
+    <dimen name="dialog_button_white_height">40dip</dimen>
+    <dimen name="dialog_button_radius">5dip</dimen>
+
+    <!-- POPUP REGISTRATION -->
+    <dimen name="dialog_photo_width">90dip</dimen>
+    <dimen name="dialog_photo_height">90dip</dimen>
+
+    <!-- EDITTEXT -->
+    <dimen name="dialog_edittext_radius">5dip</dimen>
+    <dimen name="dialog_edittext_height">35dip</dimen>
+    <dimen name="dialog_edittext_margin_top_bottom">5dip</dimen>
+
+    <!-- LABEL -->
+    <dimen name="dialog_label_margin_left">5dip</dimen>
+    <dimen name="dialog_label_margin_right">20dip</dimen>
+
+</resources>

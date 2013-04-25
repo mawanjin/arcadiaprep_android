@@ -1,0 +1,57 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+	var video;
+
+	function playVideo() {
+		document.getElementById('div_play').style.display = "none";
+		video = document.getElementById('vid');
+		video.play();
+	}
+	function stopVideo() {
+		video = document.getElementById('vid');
+		video.pause();
+	}
+	//window.onload = playVideo;
+	window.onunload = stopVideo;
+
+	function fillContent(c) {
+		var play_icon = '<div id="div_play" style="position:absolute;width:640px;height:480px;" onclick="playVideo()"><table width="100%" height="100%" border=1><tr><td align="center"><img src="file:///android_asset/play_button.png" onclick="playVideo()" /></td></tr></table></div>';
+		document.getElementById('div_content').innerHTML = play_icon + c;
+	}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+<body style="margin: 0 auto; padding: 0; width: 640px; height: 480px;">
+
+
+
+	<div id="div_content"
+		style="margin: 0 auto; position:relative ; width: 100%; height: 480px;" onclick="playVideo();">
+		<!-- 
+			style="position: absolute; width: 100%; height: 100%;" onclick="playVideo();">
+			<table width="100%" height="100%" border=0 >
+				<tr>
+					<td align="center"><img src="file:///android_asset/play_button.png"
+						 /></td>
+				</tr>
+			</table>
+		</div>
+
+		<video controls height="100%" id="vid" onclick="playVideo();"
+			poster="sbvideos/DSF-3.jpg" preload="none" src="sbvideos/DSF-3.mp4"
+			width="100%"></video>
+		<script>
+			play_offset = 360;
+		</script>
+		-!>
+	</div>
+	
+	
+
+</body>
+
+</html>

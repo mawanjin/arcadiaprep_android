@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ArcadiaprepActivity!</string>
+    <string name="app_name">Arcadiaprep</string>
+    <string name="main_icon_information">information</string>
+    <string name="main_login">Login</string>
+    <string name="main_logout">Logout</string>
+    <string name="main_recommendations">Recommendations</string>
+    <string name="main_visitmarketplace">Visit Marketplace    >  </string>
+    <string name="myquestionsets">My Question Sets</string>
+
+    <color name="main_category_bar">#0c75ce</color>
+    <color name="main_category_bar_select">#04314a</color>
+
+    <string-array name="pop_question_menu_list">
+        <item>Exit the Exam</item>
+        <item>Finish &amp; Review the Exam</item>
+        <item>Report a problem</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string name="pen_settings">Pen Settings</string>
+    <string name="eraser_settings">Eraser Settings</string>
+    <string name="clear_all">Clear All</string>
+    <string name="pen">Pen</string>
+    <string name="text">Text</string>
+    <string name="eraser">Eraser</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="pen_only">Pen Only</string>
+    <string name="scrolling_only">Scroll Only</string>
+    <string name="confirm_clear_all">All data will be cleared</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <!-- add for Samsung market -->
+    <string name="market_place">Market Place</string>
+    <string name="simple_purchase">Simple purchase</string>
+    <string name="get_item_list">Get item list</string>
+    <string name="get_purchased_item_list">Get purchased item list</string>
+    <string name="purchase">Purchase</string>
+    <string name="item_price">Item Price</string>
+    <string name="item_description">Item Description</string>
+    <string name="item_name">Item Name</string>
+    <string name="next_arrow">" > "</string>
+    <string name="done">"Done"</string>
+    <string name="buy_now">"Buy Now"</string>
+    <string name="back">"Back"</string>
+    <string name="restore">"Restore Purchase"</string>
+
+    <string-array name="app_information">
+        <item>The Arcadia LSAT Course</item>
+        <item>Shorthand/Notation</item>
+        <item>Go To ArcadiaPrep.com</item>
+    </string-array>
+    
+    <string name="device_screen">xlarge-mdpi</string>
+
+</resources>

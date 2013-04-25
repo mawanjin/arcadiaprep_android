@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- item image -->
+
+    <ImageView
+        android:id="@+id/imageItem"
+        android:layout_width="@dimen/main_list_icon_width"
+        android:layout_height="@dimen/main_list_icon_height"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         >
+
+        <!-- item title one -->
+
+        <TextView
+            android:id="@+id/titleItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16dip"
+             />
+
+        <!-- item title two -->
+
+        <TextView
+            android:id="@+id/infoItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16dip"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             >
+
+            <!-- progress -->
+
+            <TextView
+                android:id="@+id/progress_txt"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dip"
+                android:gravity="left"
+                android:text="test" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="110dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="5dp"
+                android:max="100"
+                android:progress="80"
+                android:progressDrawable="@drawable/progress_style_xml_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/setting_list_item_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:src="@drawable/into_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

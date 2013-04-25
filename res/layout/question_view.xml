@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fullscreenContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+        
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_container" >
+
+    <LinearLayout
+        android:id="@+id/question_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/app_head_height"
+            android:background="@drawable/top_bar" 
+            android:gravity="center_vertical">
+
+            <!-- this button is used to return review activity. -->
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="@dimen/question_view_button_menu_width"
+                android:layout_height="@dimen/question_view_button_menu_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bttn_no_txt"
+                android:text="Done"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <!-- Page Number --> 
+            <Button
+                android:id="@+id/btnReload"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/btnPage"
+                android:layout_width="@dimen/question_view_button_menu_width"
+                android:layout_height="@dimen/question_view_button_menu_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/btnDone"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bttn_no_txt"
+                android:text="1/25"
+                android:textColor="@android:color/white" />
+            <!-- page navigation -->
+
+            <ImageButton
+                android:id="@+id/btnPre"
+                android:layout_width="@dimen/question_view_button_page_width"
+                android:layout_height="@dimen/question_view_button_page_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/btnPage"
+                android:background="#00000000"
+                android:src="@drawable/backward" />
+
+            <ImageButton
+                android:id="@+id/btnNxt"
+                android:layout_width="@dimen/question_view_button_page_width"
+                android:layout_height="@dimen/question_view_button_page_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/btnPre"
+                android:background="#00000000"
+                android:src="@drawable/forward" />
+
+            <ImageButton
+                android:id="@+id/btnClock"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/clock_icon" />
+
+            <TextView
+                android:id="@+id/txtClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/clock_icon"
+                android:textColor="@android:color/white"
+                android:textSize="16pt"
+                android:typeface="normal"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnMenu"
+                android:layout_width="@dimen/question_view_button_menu_width"
+                android:layout_height="@dimen/question_view_button_menu_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bttn_no_txt"
+                android:text="Menu"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnBookmark"
+                android:layout_width="@dimen/question_view_button_bookmark_width"
+                android:layout_height="@dimen/question_view_button_bookmark_height"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@id/btnMenu"
+                android:background="@drawable/bookmark"
+                android:contentDescription="@string/main_icon_information" />
+
+            <Button
+                android:id="@+id/btnInteraction"
+                android:layout_width="@dimen/question_view_button_discussion_width"
+                android:layout_height="@dimen/question_view_button_discussion_height"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@id/btnBookmark"
+                android:background="@drawable/disc_no_text"
+                android:contentDescription="@string/main_icon_information"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- Vieo Container -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <WebView
+                android:id="@+id/webViewVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_round_gray"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Viedo Button -->
+
+        <LinearLayout
+            android:id="@+id/viedo_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:id="@+id/viedo_container_inner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <!-- Replay -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp" >
+ 
+                    <ImageButton
+                        android:id="@+id/btnReplay"
+                        android:layout_width="@dimen/button_normal_width"
+                        android:layout_height="@dimen/button_normal_height"
+                        android:src="@drawable/bttn_no_txt" />
+                </RelativeLayout>
+
+                <!-- Button1 -->
+
+                <RelativeLayout
+                    android:id="@+id/btnVideo1Container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp" >
+
+                    <ImageButton
+                        android:id="@+id/btnVideo1"
+                        android:layout_width="@dimen/button_normal_width"
+                        android:layout_height="@dimen/button_normal_height"
+                        android:src="@drawable/bttn_no_txt" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/media_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/movie" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Media"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Button2 -->
+
+                <RelativeLayout
+                    android:id="@+id/btnVideo2Container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/btnVideo2"
+                        android:layout_width="@dimen/button_normal_width"
+                        android:layout_height="@dimen/button_normal_height"
+                        android:src="@drawable/bttn_no_txt" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/movie" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Media"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</FrameLayout>

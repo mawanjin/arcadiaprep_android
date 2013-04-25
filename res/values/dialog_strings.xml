@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- LOGIN POPUP -->
+    <string name="dialog_header_login">Login to ArcadiaPrep.com</string>
+    <string name="dialog_label_login">Login</string>
+    <string name="dialog_hint_login">Enter an e-mail*</string>
+    <string name="dialog_label_password">Password</string>
+    <string name="dialog_hint_password">Enter a password*</string>
+    <string name="dialog_label_no_account">Don\'t have an AcrediaPrep.com log-in?</string>
+    <string name="dialog_label_register">Register</string>
+
+    <!-- REGISTRATION POPUP -->
+    <string name="dialog_hint_photo">Set photo</string>
+    <string name="dialog_hint_first_name">First Name*</string>
+    <string name="dialog_hint_last_name">Last Name*</string>
+    <string name="dialog_hint_email">Email (Used as Username)*</string>
+    <string name="dialog_hint_password_register">Password*</string>
+    <string name="dialog_hint_password_again">Password Again*</string>
+    <string name="dialog_label_cancel">Cancel</string>
+
+    <!-- PROGRESS -->
+    <string name="dialog_loading">Loading&#8230;</string>
+    <string name="dialog_wait">Please wait&#8230;</string>
+
+    <!-- ERROR MESSAGES -->
+    <string name="dialog_alert_title_connectivity_problem">Connectivity problem</string>
+    <string name="dialog_alert_message_connectivity_problem">Please check your Internet\nconnectivity and try again.</string>
+    <string name="dialog_alert_title_login_problem">Login problem</string>
+    <string name="dialog_alert_message_login_failed">Can\'t login at the moment.\nPlease try again later.</string>
+    <string name="dialog_alert_title_register_problem">Registration problem</string>
+    <string name="dialog_alert_message_register_failed">Can\'t register at the moment.\nPlease try again later.</string>
+    <string name="dialog_ok">OK</string>
+
+    <!-- PHOTO -->
+    <string name="dialog_select_from_gallery">Select from gallery</string>
+    <string name="dialog_take_photo">Take photo</string>
+
+</resources>
